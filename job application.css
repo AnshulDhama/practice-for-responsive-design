@@ -1,0 +1,107 @@
+* {
+    background-color: rgb(169, 169, 169);
+}
+
+body {
+    display: block;
+}
+
+.content {
+
+    width: 40em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 13px;
+    /* padding-right: 3em; */
+}
+
+.contentinner {
+    background-color: white;
+    justify-content: left;
+    width: 25em;
+    padding-bottom: 1em;
+}
+
+h1 {
+    font-size: 20px;
+    background-color: white;
+}
+
+span {
+    font-size: 0.8em;
+    background-color: white;
+}
+
+.main {
+    /* flex-direction: row;  */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    float: left;
+}
+
+.mainchild {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    margin: 0em 1em 2em 1em;
+}
+
+.main .mainchild input {
+    padding: .5em .6em .7em 0.5em;
+    background-color: white;
+    font-size: 14px;
+}
+
+#select {
+    padding: .7em 1.9em .7em 1.9em;
+    background-color: white;
+}
+
+#address {
+    padding: 0.5em 16.9em .5em 0.5em;
+}
+
+#date {
+    padding: 0.5em 5em 0.7em 0.5em;
+}
+
+#upload {
+    border: 2px solid black;
+    padding: 0.45em;
+    width: 12.7em;
+    font-stretch: condensed;
+}
+
+.button,
+input {
+    background-color: white;
+    float: right;
+}
+.button :hover{
+    background-color: rgb(142, 55, 200);
+transition: all ease 1s;
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+    .contentinner{
+        display: contents;
+        padding-left: 12em;
+        justify-content: center;
+    }
+#address{
+    padding-right: 1em;
+}
+h1{
+    text-align: center;
+}
+.button{
+    margin-bottom: 1em;
+}
+}
